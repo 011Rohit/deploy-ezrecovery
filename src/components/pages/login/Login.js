@@ -98,7 +98,7 @@ class Login extends Component {
 
                 if (this.state.type === '1') {
                     const res = await Axios.post(
-                        'http://ezrecoveryapi.herokuapp.com/login',
+                        'https://ezrecoveryapi.herokuapp.com/login',
                         {
                             // method: "POST",
                             data: { username: this.state.username, password: this.state.password },
@@ -127,7 +127,7 @@ class Login extends Component {
 
 
                     const res = await Axios.post(
-                        'http://ezrecoveryapi.herokuapp.com/loginFieldStaff',
+                        'https://ezrecoveryapi.herokuapp.com/loginFieldStaff',
                         {
                             // method: "POST",
                             data: { username: this.state.username, password: this.state.password },
