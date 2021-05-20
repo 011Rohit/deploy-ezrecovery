@@ -86,7 +86,7 @@ export default class View_records extends Component {
 
     async componentDidMount() {
 
-        const res = await Axios.get('http://ezrecoveryapi.herokuapp.com/getAllRecords');
+        const res = await Axios.get('https://ezrecoveryapi.herokuapp.com/getAllRecords');
         //console.log(res)
         if (res.data.records) {
             this.setState({

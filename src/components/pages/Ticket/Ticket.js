@@ -50,7 +50,7 @@ export default class Ticket extends Component {
         try {
 
             const r = await Axios.get(
-                'http://ezrecoveryapi.herokuapp.com/getIsDone?id=' + id,
+                'https://ezrecoveryapi.herokuapp.com/getIsDone?id=' + id,
 
             );
 
@@ -60,7 +60,7 @@ export default class Ticket extends Component {
             })
 
             const res = await Axios.post(
-                'http://ezrecoveryapi.herokuapp.com/getBorrowerById',
+                'https://ezrecoveryapi.herokuapp.com/getBorrowerById',
                 {
                     // method: "POST",
                     data: { Borrower_id: id },
@@ -109,7 +109,7 @@ export default class Ticket extends Component {
                 console.log(this.state.status)
                 console.log(this.state.special_note)
                 const res = await Axios.post(
-                    'http://ezrecoveryapi.herokuapp.com/updateStatus',
+                    'https://ezrecoveryapi.herokuapp.com/updateStatus',
                     {
                         data: { Borrower_id: localStorage.getItem('borrower_id'), status: this.state.status, special_note: this.state.special_note },
                     }

@@ -34,7 +34,7 @@ export default class MyAllocation extends Component {
     async componentDidMount() {
         try {
             const res = await Axios.post(
-                'http://ezrecoveryapi.herokuapp.com/MyAllocation',
+                'https://ezrecoveryapi.herokuapp.com/MyAllocation',
                 {
                     // method: "POST",
                     data: { field_staff_username: this.state.field_staff_username },

@@ -62,7 +62,7 @@ export default function DetailsMonitor(props) {
     const [total, setTotal] = useState(0)
 
     useEffect(() => {
-        Axios.post('http://ezrecoveryapi.herokuapp.com/getDetailsForPerticularFieldStaff', {
+        Axios.post('https://ezrecoveryapi.herokuapp.com/getDetailsForPerticularFieldStaff', {
             id: id
         })
             .then(res => {

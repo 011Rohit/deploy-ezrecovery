@@ -55,7 +55,7 @@ function RevokeLeaves() {
 
     const revokeLeaves = () => {
         setOpen(false)
-        Axios.post('http://ezrecoveryapi.herokuapp.com/revokeLeaves', {
+        Axios.post('https://ezrecoveryapi.herokuapp.com/revokeLeaves', {
             start: startDate,
             end: endDate,
             id: localStorage.getItem('id'),
@@ -75,7 +75,7 @@ function RevokeLeaves() {
     }
 
     useEffect(() => {
-        Axios.post('http://ezrecoveryapi.herokuapp.com/getLeaves', {
+        Axios.post('https://ezrecoveryapi.herokuapp.com/getLeaves', {
             id: localStorage.getItem('id'),
         }).then(res => {
             setLeaves(res.data.data)

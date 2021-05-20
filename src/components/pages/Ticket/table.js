@@ -78,7 +78,7 @@ export default function BasicTable(props) {
       try {
 
         const res = Axios.post(
-          'http://ezrecoveryapi.herokuapp.com/updateStatus',
+          'https://ezrecoveryapi.herokuapp.com/updateStatus',
           {
 
             data: { Borrower_id: localStorage.getItem('borrower_id'), status: status, special_note: special_note },

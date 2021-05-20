@@ -54,7 +54,7 @@ function AddLeave() {
 
     const insertLeaves = () => {
         setOpen(false)
-        Axios.post('http://ezrecoveryapi.herokuapp.com/insertLeaves', {
+        Axios.post('https://ezrecoveryapi.herokuapp.com/insertLeaves', {
             start: startDate,
             end: endDate,
             id: localStorage.getItem('id'),
@@ -84,7 +84,7 @@ function AddLeave() {
     }
 
     useEffect(() => {
-        Axios.post('http://ezrecoveryapi.herokuapp.com/getLeaves', {
+        Axios.post('https://ezrecoveryapi.herokuapp.com/getLeaves', {
             id: localStorage.getItem('id'),
         }).then(res => {
             //setCalendarState(!calendarState)
@@ -287,7 +287,7 @@ export default AddLeave
 
 //     handleDateSelect = (selectInfo) => {
 //         //console.log("Anish")
-//         Axios.post("http://localhost:3001/getLeaves", {
+//         Axios.post("https://localhost:3001/getLeaves", {
 //             eno: 1,
 //         }).then(response => {
 //             var res = response.data;
@@ -389,7 +389,7 @@ export default AddLeave
 //     handleDateSelect = () => {
 //         console.log(this.state.count)
 //         var array;
-//         Axios.post("http://localhost:3001/getLeaves", {
+//         Axios.post("https://localhost:3001/getLeaves", {
 //             eno: 1,
 //         }).then(response => {
 

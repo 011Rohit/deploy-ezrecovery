@@ -14,7 +14,7 @@ export default function CardMonitor() {
 
 
     useEffect(() => {
-        Axios.get('http://ezrecoveryapi.herokuapp.com/getFieldStaffNamesCard')
+        Axios.get('https://ezrecoveryapi.herokuapp.com/getFieldStaffNamesCard')
             .then(res => {
                 if (res.data.success) {
                     setCardData(res.data.data)

@@ -55,7 +55,7 @@ export default function Employees() {
     const [tableState, setTableState] = useState(false)
     // setRecords(employeeService.getAllEmployees());
     useEffect(() => {
-        Axios.get('http://ezrecoveryapi.herokuapp.com/getAllFieldStaffRecords')
+        Axios.get('httpss://ezrecoveryapi.herokuapp.com/getAllFieldStaffRecords')
             .then(res => {
                 console.log(res.data.data)
                 setRecords(res.data.data)
@@ -94,7 +94,7 @@ export default function Employees() {
     }
 
     const addOrEdit = (employee, resetForm) => {
-        Axios.post('http://ezrecoveryapi.herokuapp.com/insertFieldStaffRecords', {
+        Axios.post('httpss://ezrecoveryapi.herokuapp.com/insertFieldStaffRecords', {
             employee: employee
         }).then(res => {
             if (res.data.success) {
@@ -127,7 +127,7 @@ export default function Employees() {
             isOpen: false
         })
 
-        Axios.post('http://ezrecoveryapi.herokuapp.com/deleteFieldStaff', {
+        Axios.post('https://ezrecoveryapi.herokuapp.com/deleteFieldStaff', {
             id: id
         }).then(res => {
             if (res.data.success)

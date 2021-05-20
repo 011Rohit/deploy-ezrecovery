@@ -238,7 +238,7 @@ export default function EnhancedTable() {
   const [severity, setSeverity] = useState('')
 
   useEffect(async () => {
-    Axios.post('http://ezrecoveryapi.herokuapp.com/getAllLocation',
+    Axios.post('httpss://ezrecoveryapi.herokuapp.com/getAllLocation',
       {
         id: localStorage.getItem('id')
       })
@@ -315,7 +315,7 @@ export default function EnhancedTable() {
     }
     else {
       // console.log(localStorage.getItem('id'))
-      Axios.post('http://ezrecoveryapi.herokuapp.com/setLocations', {
+      Axios.post('httpss://ezrecoveryapi.herokuapp.com/setLocations', {
         id: localStorage.getItem('id'),
         locations: selected
       })

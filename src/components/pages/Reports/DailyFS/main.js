@@ -65,7 +65,7 @@ export default function DailyMainFS(props) {
     const [remainingTotal, setRemainingTotal] = useState(0)
 
     useEffect(() => {
-        Axios.post('http://ezrecoveryapi.herokuapp.com/getDailyReportForFieldStaff', {
+        Axios.post('https://ezrecoveryapi.herokuapp.com/getDailyReportForFieldStaff', {
             username: localStorage.getItem('username')
         })
             .then(res => {

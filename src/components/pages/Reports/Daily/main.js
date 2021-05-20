@@ -65,7 +65,7 @@ export default function DailyMain(props) {
     const [remainingTotal, setRemainingTotal] = useState(0)
 
     useEffect(() => {
-        Axios.get('http://ezrecoveryapi.herokuapp.com/getDailyReport')
+        Axios.get('https://ezrecoveryapi.herokuapp.com/getDailyReport')
             .then(res => {
                 let data = res.data.data
                 console.log(data)

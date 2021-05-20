@@ -32,7 +32,7 @@ export default class Allocation extends Component {
     }
 
     async componentDidMount() {
-        const res = await Axios.get('http://ezrecoveryapi.herokuapp.com/getAllocationDetails');
+        const res = await Axios.get('https://ezrecoveryapi.herokuapp.com/getAllocationDetails');
         //console.log(res.data['AllocationDetails'][1])
         //const res2 = await Axios.get('http://ezrecoveryapi.herokuapp.com/getAllocationDetails2');
 
@@ -109,7 +109,7 @@ export default class Allocation extends Component {
             }
             else {
                 const res = await Axios.post(
-                    'http://ezrecoveryapi.herokuapp.com/xyz',
+                    'https://ezrecoveryapi.herokuapp.com/xyz',
                     {
                         // method: "POST",
                         data: { perFieldStaff: this.state.perFieldStaff, availableEmp: this.state.availableEmp },

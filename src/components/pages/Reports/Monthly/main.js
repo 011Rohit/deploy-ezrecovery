@@ -62,7 +62,7 @@ export default function MonthlyMain() {
     const [remainingTotal, setRemainingTotal] = useState(0)
 
     useEffect(() => {
-        Axios.get('http://ezrecoveryapi.herokuapp.com/getMonthlyReport')
+        Axios.get('https://ezrecoveryapi.herokuapp.com/getMonthlyReport')
             .then(res => {
                 let data = res.data.data
                 console.log(data)
