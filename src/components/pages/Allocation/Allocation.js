@@ -145,7 +145,7 @@ export default class Allocation extends Component {
                 <div className="AvailableEmployee" style={{ display: this.state.visible }}>
                     <h2 style={{ marginRight: '1', display: this.state.visible }}>Available for Allocation</h2>
                     {
-                        this.state.availableEmp != 0 &&
+                        this.state.availableEmp.length != 0 &&
                         <table class="styled-table1">
                             <thead style={{ textAlign: 'center' }}>
                                 <th>ID</th>
